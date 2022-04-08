@@ -17,13 +17,14 @@ public class TodoList {
             System.out.println("Добавлено дело: " + todo);
         } else {
             todolist.add(todo);
+
         }
 
     }
 
     public void edit(int index, String todo) {
         String docket;
-        if (index < todolist.size() && index > 0) {
+        if (index < todolist.size() && index >= 0) {
             docket = todolist.set(index, todo);
             System.out.println("Дело " + docket + " заменено на " + todo);
         }
